@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.yike.listener.TestFailListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="D:/code/java_web_frame">
+        <classes>
+            <class name="com.yike.testcases.TestInvest">
+                <methods>
+                    <include name="testInvestSuccess"/>
+                </methods>
+            </class>
+            <class name="com.yike.testcases.TestLogin">
+                <methods>
+                    <include name="testLoginSuccess"/>
+                    <include name="testPhoneWrongFormatAndEmptyPwd"/>
+                    <include name="testPhoneUnregisterAndWrongPwd"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

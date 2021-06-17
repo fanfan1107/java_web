@@ -1,0 +1,11 @@
+com\yike\listener\TestFailListener.class
+com\yike\base\BaseTest.class
+com\yike\pages\MemberPage.class
+com\yike\testcases\TestInvest.class
+com\yike\base\Assertion.class
+com\yike\pages\IndexPage.class
+com\yike\testcases\TestLogin.class
+com\yike\pages\InvestPage.class
+com\yike\pages\LoginPage.class
+com\yike\data\Constants.class
+com\yike\base\BasePage.class

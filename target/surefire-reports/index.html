@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-All_Test_Suite">
+              <span class="suite-name border-failed">All Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-All_Test_Suite">
+                    <span>D:\code\java_web_frame\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-All_Test_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-All_Test_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-All_Test_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-All_Test_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-All_Test_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-All_Test_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.yike.testcases.TestLogin" hash-for-method="testPhoneWrongFormatAndEmptyPwd(, smile123fan, 请输入手机)">testPhoneWrongFormatAndEmptyPwd(, smile123fan, 请输入手机)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-All_Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.yike.testcases.TestInvest" hash-for-method="testInvestSuccess">testInvestSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.yike.testcases.TestLogin" hash-for-method="testLoginSuccess">testLoginSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.yike.testcases.TestLogin" hash-for-method="testPhoneUnregisterAndWrongPwd(15859019266, smile123fan, 此账号没有经过授权，请联系管理员!)">testPhoneUnregisterAndWrongPwd(15859019266, smile123fan, 此账号没有经过授权，请联系管理员!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.yike.testcases.TestLogin" hash-for-method="testPhoneUnregisterAndWrongPwd(18361223547, smile123, 帐号或密码错误!)">testPhoneUnregisterAndWrongPwd(18361223547, smile123, 帐号或密码错误!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.yike.testcases.TestLogin" hash-for-method="testPhoneUnregisterAndWrongPwd(18361223547, smile 123, 帐号或密码错误!)">testPhoneUnregisterAndWrongPwd(18361223547, smile 123, 帐号或密码错误!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.yike.testcases.TestLogin" hash-for-method="testPhoneUnregisterAndWrongPwd(18361223547, smile12312434435466, 帐号或密码错误!)">testPhoneUnregisterAndWrongPwd(18361223547, smile12312434435466, 帐号或密码错误!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.yike.testcases.TestLogin" hash-for-method="testPhoneUnregisterAndWrongPwd(18361223547, smile123FAN, 帐号或密码错误!)">testPhoneUnregisterAndWrongPwd(18361223547, smile123FAN, 帐号或密码错误!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.yike.testcases.TestLogin" hash-for-method="testPhoneWrongFormatAndEmptyPwd(18361223547, , 请输入密码)">testPhoneWrongFormatAndEmptyPwd(18361223547, , 请输入密码)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.yike.testcases.TestLogin" hash-for-method="testPhoneWrongFormatAndEmptyPwd(1836122354, smile123fan, 请输入正确的手机号)">testPhoneWrongFormatAndEmptyPwd(1836122354, smile123fan, 请输入正确的手机号)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.yike.testcases.TestLogin" hash-for-method="testPhoneWrongFormatAndEmptyPwd(11161223547, smile123fan, 请输入正确的手机号)">testPhoneWrongFormatAndEmptyPwd(11161223547, smile123fan, 请输入正确的手机号)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.yike.testcases.TestLogin" hash-for-method="testPhoneWrongFormatAndEmptyPwd(183612235471, smile123fan, 请输入正确的手机号)">testPhoneWrongFormatAndEmptyPwd(183612235471, smile123fan, 请输入正确的手机号)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.yike.testcases.TestLogin" hash-for-method="testPhoneWrongFormatAndEmptyPwd(1585901925%, smile124fan, 请输入正确的手机号)">testPhoneWrongFormatAndEmptyPwd(1585901925%, smile124fan, 请输入正确的手机号)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.yike.testcases.TestLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneWrongFormatAndEmptyPwd(, smile123fan, 请输入手机)">
+                  </a> <!-- testPhoneWrongFormatAndEmptyPwd(, smile123fan, 请输入手机) -->
+                  <span class="method-name">testPhoneWrongFormatAndEmptyPwd</span>
+                  <span class="parameters">(, smile123fan, 请输入手机)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [请输入手机] but found [请输入手机号]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.yike.base.Assertion.myAssertEquals(Assertion.java:56)
+	at com.yike.testcases.TestLogin.testPhoneWrongFormatAndEmptyPwd(TestLogin.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+	at com.yike.listener.TestFailListener.run(TestFailListener.java:22)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:251)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:580)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.yike.testcases.TestInvest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvestSuccess">
+                  </a> <!-- testInvestSuccess -->
+                  <span class="method-name">testInvestSuccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.yike.testcases.TestLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginSuccess">
+                  </a> <!-- testLoginSuccess -->
+                  <span class="method-name">testLoginSuccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneUnregisterAndWrongPwd(15859019266, smile123fan, 此账号没有经过授权，请联系管理员!)">
+                  </a> <!-- testPhoneUnregisterAndWrongPwd(15859019266, smile123fan, 此账号没有经过授权，请联系管理员!) -->
+                  <span class="method-name">testPhoneUnregisterAndWrongPwd</span>
+                  <span class="parameters">(15859019266, smile123fan, 此账号没有经过授权，请联系管理员!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneUnregisterAndWrongPwd(18361223547, smile123, 帐号或密码错误!)">
+                  </a> <!-- testPhoneUnregisterAndWrongPwd(18361223547, smile123, 帐号或密码错误!) -->
+                  <span class="method-name">testPhoneUnregisterAndWrongPwd</span>
+                  <span class="parameters">(18361223547, smile123, 帐号或密码错误!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneUnregisterAndWrongPwd(18361223547, smile 123, 帐号或密码错误!)">
+                  </a> <!-- testPhoneUnregisterAndWrongPwd(18361223547, smile 123, 帐号或密码错误!) -->
+                  <span class="method-name">testPhoneUnregisterAndWrongPwd</span>
+                  <span class="parameters">(18361223547, smile 123, 帐号或密码错误!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneUnregisterAndWrongPwd(18361223547, smile12312434435466, 帐号或密码错误!)">
+                  </a> <!-- testPhoneUnregisterAndWrongPwd(18361223547, smile12312434435466, 帐号或密码错误!) -->
+                  <span class="method-name">testPhoneUnregisterAndWrongPwd</span>
+                  <span class="parameters">(18361223547, smile12312434435466, 帐号或密码错误!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneUnregisterAndWrongPwd(18361223547, smile123FAN, 帐号或密码错误!)">
+                  </a> <!-- testPhoneUnregisterAndWrongPwd(18361223547, smile123FAN, 帐号或密码错误!) -->
+                  <span class="method-name">testPhoneUnregisterAndWrongPwd</span>
+                  <span class="parameters">(18361223547, smile123FAN, 帐号或密码错误!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneWrongFormatAndEmptyPwd(18361223547, , 请输入密码)">
+                  </a> <!-- testPhoneWrongFormatAndEmptyPwd(18361223547, , 请输入密码) -->
+                  <span class="method-name">testPhoneWrongFormatAndEmptyPwd</span>
+                  <span class="parameters">(18361223547, , 请输入密码)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneWrongFormatAndEmptyPwd(1836122354, smile123fan, 请输入正确的手机号)">
+                  </a> <!-- testPhoneWrongFormatAndEmptyPwd(1836122354, smile123fan, 请输入正确的手机号) -->
+                  <span class="method-name">testPhoneWrongFormatAndEmptyPwd</span>
+                  <span class="parameters">(1836122354, smile123fan, 请输入正确的手机号)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneWrongFormatAndEmptyPwd(11161223547, smile123fan, 请输入正确的手机号)">
+                  </a> <!-- testPhoneWrongFormatAndEmptyPwd(11161223547, smile123fan, 请输入正确的手机号) -->
+                  <span class="method-name">testPhoneWrongFormatAndEmptyPwd</span>
+                  <span class="parameters">(11161223547, smile123fan, 请输入正确的手机号)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneWrongFormatAndEmptyPwd(183612235471, smile123fan, 请输入正确的手机号)">
+                  </a> <!-- testPhoneWrongFormatAndEmptyPwd(183612235471, smile123fan, 请输入正确的手机号) -->
+                  <span class="method-name">testPhoneWrongFormatAndEmptyPwd</span>
+                  <span class="parameters">(183612235471, smile123fan, 请输入正确的手机号)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneWrongFormatAndEmptyPwd(1585901925%, smile124fan, 请输入正确的手机号)">
+                  </a> <!-- testPhoneWrongFormatAndEmptyPwd(1585901925%, smile124fan, 请输入正确的手机号) -->
+                  <span class="method-name">testPhoneWrongFormatAndEmptyPwd</span>
+                  <span class="parameters">(1585901925%, smile124fan, 请输入正确的手机号)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+        </div> <!-- panel All_Test_Suite -->
+        <div panel-name="test-xml-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\code\java_web_frame\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;All Test Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.yike.listener.TestFailListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;D:/code/java_web_frame&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.yike.testcases.TestInvest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testInvestSuccess&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.yike.testcases.TestInvest --&gt;
+      &lt;class name=&quot;com.yike.testcases.TestLogin&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testLoginSuccess&quot;/&gt;
+          &lt;include name=&quot;testPhoneWrongFormatAndEmptyPwd&quot;/&gt;
+          &lt;include name=&quot;testPhoneUnregisterAndWrongPwd&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.yike.testcases.TestLogin --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- D:/code/java_web_frame --&gt;
+&lt;/suite&gt; &lt;!-- All Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">D:/code/java_web_frame (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_All_Test_Suite');
+function tableData_All_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testInvestSuccess')
+data.setCell(0, 2, 'com.yike.testcases.TestInvest')
+data.setCell(0, 3, 12602);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testLoginSuccess')
+data.setCell(1, 2, 'com.yike.testcases.TestLogin')
+data.setCell(1, 3, 1308);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testPhoneUnregisterAndWrongPwd')
+data.setCell(2, 2, 'com.yike.testcases.TestLogin')
+data.setCell(2, 3, 1024);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testPhoneUnregisterAndWrongPwd')
+data.setCell(3, 2, 'com.yike.testcases.TestLogin')
+data.setCell(3, 3, 982);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testPhoneUnregisterAndWrongPwd')
+data.setCell(4, 2, 'com.yike.testcases.TestLogin')
+data.setCell(4, 3, 935);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testPhoneWrongFormatAndEmptyPwd')
+data.setCell(5, 2, 'com.yike.testcases.TestLogin')
+data.setCell(5, 3, 855);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testPhoneUnregisterAndWrongPwd')
+data.setCell(6, 2, 'com.yike.testcases.TestLogin')
+data.setCell(6, 3, 558);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testPhoneUnregisterAndWrongPwd')
+data.setCell(7, 2, 'com.yike.testcases.TestLogin')
+data.setCell(7, 3, 528);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testPhoneWrongFormatAndEmptyPwd')
+data.setCell(8, 2, 'com.yike.testcases.TestLogin')
+data.setCell(8, 3, 348);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testPhoneWrongFormatAndEmptyPwd')
+data.setCell(9, 2, 'com.yike.testcases.TestLogin')
+data.setCell(9, 3, 344);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testPhoneWrongFormatAndEmptyPwd')
+data.setCell(10, 2, 'com.yike.testcases.TestLogin')
+data.setCell(10, 3, 328);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testPhoneWrongFormatAndEmptyPwd')
+data.setCell(11, 2, 'com.yike.testcases.TestLogin')
+data.setCell(11, 3, 312);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testPhoneWrongFormatAndEmptyPwd')
+data.setCell(12, 2, 'com.yike.testcases.TestLogin')
+data.setCell(12, 3, 295);
+window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <div id="times-div-All_Test_Suite">
+              </div> <!-- times-div-All_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yike.testcases.TestInvest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvestSuccess</span>
+                <span class="method-start">21644 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">34260 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yike.testcases.TestLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">34961 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginSuccess</span>
+                <span class="method-start">36992 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">38302 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">38969 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testPhoneWrongFormatAndEmptyPwd(, smile123fan, 请输入手机)</span>
+                <span class="method-start">41062 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">41937 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">42617 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPhoneWrongFormatAndEmptyPwd(1836122354, smile123fan, 请输入正确的手机号)</span>
+                <span class="method-start">44592 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">44905 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">45564 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPhoneWrongFormatAndEmptyPwd(183612235471, smile123fan, 请输入正确的手机号)</span>
+                <span class="method-start">47507 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">47856 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">48515 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPhoneWrongFormatAndEmptyPwd(11161223547, smile123fan, 请输入正确的手机号)</span>
+                <span class="method-start">50481 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">50826 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">51472 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPhoneWrongFormatAndEmptyPwd(1585901925%, smile124fan, 请输入正确的手机号)</span>
+                <span class="method-start">53553 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">53883 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">54538 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPhoneWrongFormatAndEmptyPwd(18361223547, , 请输入密码)</span>
+                <span class="method-start">56460 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">56757 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">57436 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPhoneUnregisterAndWrongPwd(15859019266, smile123fan, 此账号没有经过授权，请联系管理员!)</span>
+                <span class="method-start">59491 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">60475 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">61125 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPhoneUnregisterAndWrongPwd(18361223547, smile123, 帐号或密码错误!)</span>
+                <span class="method-start">63232 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">64169 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">64826 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPhoneUnregisterAndWrongPwd(18361223547, smile12312434435466, 帐号或密码错误!)</span>
+                <span class="method-start">67120 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">67679 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">68339 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPhoneUnregisterAndWrongPwd(18361223547, smile123FAN, 帐号或密码错误!)</span>
+                <span class="method-start">70442 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">70972 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">71631 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPhoneUnregisterAndWrongPwd(18361223547, smile 123, 帐号或密码错误!)</span>
+                <span class="method-start">73749 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">74774 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

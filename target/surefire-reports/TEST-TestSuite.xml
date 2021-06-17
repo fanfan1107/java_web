@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="77.573" tests="13" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\code\java_web_frame\target\test-classes;D:\code\java_web_frame\target\classes;D:\azrj\apache-maven-3.6.1\repo\io\appium\java-client\7.0.0\java-client-7.0.0.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;D:\azrj\apache-maven-3.6.1\repo\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;D:\azrj\apache-maven-3.6.1\repo\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;D:\azrj\apache-maven-3.6.1\repo\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;D:\azrj\apache-maven-3.6.1\repo\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;D:\azrj\apache-maven-3.6.1\repo\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;D:\azrj\apache-maven-3.6.1\repo\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;D:\azrj\apache-maven-3.6.1\repo\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;D:\azrj\apache-maven-3.6.1\repo\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;D:\azrj\apache-maven-3.6.1\repo\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;D:\azrj\apache-maven-3.6.1\repo\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;D:\azrj\apache-maven-3.6.1\repo\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;D:\azrj\apache-maven-3.6.1\repo\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\azrj\apache-maven-3.6.1\repo\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;D:\azrj\apache-maven-3.6.1\repo\cglib\cglib\3.2.8\cglib-3.2.8.jar;D:\azrj\apache-maven-3.6.1\repo\org\ow2\asm\asm\6.2.1\asm-6.2.1.jar;D:\azrj\apache-maven-3.6.1\repo\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;D:\azrj\apache-maven-3.6.1\repo\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;D:\azrj\apache-maven-3.6.1\repo\commons-validator\commons-validator\1.6\commons-validator-1.6.jar;D:\azrj\apache-maven-3.6.1\repo\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;D:\azrj\apache-maven-3.6.1\repo\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;D:\azrj\apache-maven-3.6.1\repo\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;D:\azrj\apache-maven-3.6.1\repo\org\apache\commons\commons-lang3\3.8\commons-lang3-3.8.jar;D:\azrj\apache-maven-3.6.1\repo\commons-io\commons-io\2.6\commons-io-2.6.jar;D:\azrj\apache-maven-3.6.1\repo\org\springframework\spring-context\5.1.0.RELEASE\spring-context-5.1.0.RELEASE.jar;D:\azrj\apache-maven-3.6.1\repo\org\springframework\spring-aop\5.1.0.RELEASE\spring-aop-5.1.0.RELEASE.jar;D:\azrj\apache-maven-3.6.1\repo\org\springframework\spring-beans\5.1.0.RELEASE\spring-beans-5.1.0.RELEASE.jar;D:\azrj\apache-maven-3.6.1\repo\org\springframework\spring-core\5.1.0.RELEASE\spring-core-5.1.0.RELEASE.jar;D:\azrj\apache-maven-3.6.1\repo\org\springframework\spring-jcl\5.1.0.RELEASE\spring-jcl-5.1.0.RELEASE.jar;D:\azrj\apache-maven-3.6.1\repo\org\springframework\spring-expression\5.1.0.RELEASE\spring-expression-5.1.0.RELEASE.jar;D:\azrj\apache-maven-3.6.1\repo\org\aspectj\aspectjweaver\1.9.1\aspectjweaver-1.9.1.jar;D:\azrj\apache-maven-3.6.1\repo\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;D:\azrj\apache-maven-3.6.1\repo\org\testng\testng\7.0.0\testng-7.0.0.jar;D:\azrj\apache-maven-3.6.1\repo\com\beust\jcommander\1.72\jcommander-1.72.jar;D:\azrj\apache-maven-3.6.1\repo\log4j\log4j\1.2.17\log4j-1.2.17.jar;D:\azrj\apache-maven-3.6.1\repo\io\qameta\allure\allure-testng\2.12.1\allure-testng-2.12.1.jar;D:\azrj\apache-maven-3.6.1\repo\io\qameta\allure\allure-java-commons\2.12.1\allure-java-commons-2.12.1.jar;D:\azrj\apache-maven-3.6.1\repo\io\qameta\allure\allure-model\2.12.1\allure-model-2.12.1.jar;D:\azrj\apache-maven-3.6.1\repo\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;D:\azrj\apache-maven-3.6.1\repo\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;D:\azrj\apache-maven-3.6.1\repo\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;D:\azrj\apache-maven-3.6.1\repo\org\apache\tika\tika-core\1.20\tika-core-1.20.jar;D:\azrj\apache-maven-3.6.1\repo\org\jooq\joor-java-8\0.9.10\joor-java-8-0.9.10.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Le0Wu\AppData\Local\Temp\surefire7824358520649849215\surefirebooter6972285752046610456.jar C:\Users\Le0Wu\AppData\Local\Temp\surefire7824358520649849215 2021-05-26T15-39-15_806-jvmRun1 surefire3029491357082615149tmp surefire_06673520591202406405tmp"/>
+    <property name="surefire.test.class.path" value="D:\code\java_web_frame\target\test-classes;D:\code\java_web_frame\target\classes;D:\azrj\apache-maven-3.6.1\repo\io\appium\java-client\7.0.0\java-client-7.0.0.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;D:\azrj\apache-maven-3.6.1\repo\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;D:\azrj\apache-maven-3.6.1\repo\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;D:\azrj\apache-maven-3.6.1\repo\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;D:\azrj\apache-maven-3.6.1\repo\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;D:\azrj\apache-maven-3.6.1\repo\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;D:\azrj\apache-maven-3.6.1\repo\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;D:\azrj\apache-maven-3.6.1\repo\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;D:\azrj\apache-maven-3.6.1\repo\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;D:\azrj\apache-maven-3.6.1\repo\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;D:\azrj\apache-maven-3.6.1\repo\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;D:\azrj\apache-maven-3.6.1\repo\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;D:\azrj\apache-maven-3.6.1\repo\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;D:\azrj\apache-maven-3.6.1\repo\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\azrj\apache-maven-3.6.1\repo\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;D:\azrj\apache-maven-3.6.1\repo\cglib\cglib\3.2.8\cglib-3.2.8.jar;D:\azrj\apache-maven-3.6.1\repo\org\ow2\asm\asm\6.2.1\asm-6.2.1.jar;D:\azrj\apache-maven-3.6.1\repo\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;D:\azrj\apache-maven-3.6.1\repo\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;D:\azrj\apache-maven-3.6.1\repo\commons-validator\commons-validator\1.6\commons-validator-1.6.jar;D:\azrj\apache-maven-3.6.1\repo\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;D:\azrj\apache-maven-3.6.1\repo\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;D:\azrj\apache-maven-3.6.1\repo\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;D:\azrj\apache-maven-3.6.1\repo\org\apache\commons\commons-lang3\3.8\commons-lang3-3.8.jar;D:\azrj\apache-maven-3.6.1\repo\commons-io\commons-io\2.6\commons-io-2.6.jar;D:\azrj\apache-maven-3.6.1\repo\org\springframework\spring-context\5.1.0.RELEASE\spring-context-5.1.0.RELEASE.jar;D:\azrj\apache-maven-3.6.1\repo\org\springframework\spring-aop\5.1.0.RELEASE\spring-aop-5.1.0.RELEASE.jar;D:\azrj\apache-maven-3.6.1\repo\org\springframework\spring-beans\5.1.0.RELEASE\spring-beans-5.1.0.RELEASE.jar;D:\azrj\apache-maven-3.6.1\repo\org\springframework\spring-core\5.1.0.RELEASE\spring-core-5.1.0.RELEASE.jar;D:\azrj\apache-maven-3.6.1\repo\org\springframework\spring-jcl\5.1.0.RELEASE\spring-jcl-5.1.0.RELEASE.jar;D:\azrj\apache-maven-3.6.1\repo\org\springframework\spring-expression\5.1.0.RELEASE\spring-expression-5.1.0.RELEASE.jar;D:\azrj\apache-maven-3.6.1\repo\org\aspectj\aspectjweaver\1.9.1\aspectjweaver-1.9.1.jar;D:\azrj\apache-maven-3.6.1\repo\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;D:\azrj\apache-maven-3.6.1\repo\org\testng\testng\7.0.0\testng-7.0.0.jar;D:\azrj\apache-maven-3.6.1\repo\com\beust\jcommander\1.72\jcommander-1.72.jar;D:\azrj\apache-maven-3.6.1\repo\log4j\log4j\1.2.17\log4j-1.2.17.jar;D:\azrj\apache-maven-3.6.1\repo\io\qameta\allure\allure-testng\2.12.1\allure-testng-2.12.1.jar;D:\azrj\apache-maven-3.6.1\repo\io\qameta\allure\allure-java-commons\2.12.1\allure-java-commons-2.12.1.jar;D:\azrj\apache-maven-3.6.1\repo\io\qameta\allure\allure-model\2.12.1\allure-model-2.12.1.jar;D:\azrj\apache-maven-3.6.1\repo\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;D:\azrj\apache-maven-3.6.1\repo\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;D:\azrj\apache-maven-3.6.1\repo\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;D:\azrj\apache-maven-3.6.1\repo\org\apache\tika\tika-core\1.20\tika-core-1.20.jar;D:\azrj\apache-maven-3.6.1\repo\org\jooq\joor-java-8\0.9.10\joor-java-8-0.9.10.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="D:\code\java_web_frame\target/allure-results"/>
+    <property name="user.home" value="C:\Users\Le0Wu"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_231\jre"/>
+    <property name="basedir" value="D:\code\java_web_frame"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Le0Wu\AppData\Local\Temp\surefire7824358520649849215\surefirebooter6972285752046610456.jar;D:\azrj\apache-maven-3.6.1\repo/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_231\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_231-b11"/>
+    <property name="user.name" value="Le0Wu"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\azrj\apache-maven-3.6.1\repo"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Le0Wu\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_231"/>
+    <property name="user.dir" value="D:\code\java_web_frame"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_231\bin;D:\apache-maven-3.6.1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Go\bin;D:\android-sdk-windows-appium\platform-tools;D:\android-sdk-windows-appium\tools;D:\android-sdk-windows-appium\build-tools\28.0.3;C:\Users\Le0Wu\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Le0Wu\AppData\Local\Programs\Fiddler;C:\Users\Le0Wu\go\bin;D:\Program Files\JetBrains\GoLand 2020.1.3\bin;C:\Users\Le0Wu\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.231-b11"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testInvestSuccess" classname="com.yike.testcases.TestInvest" time="12.604"/>
+  <testcase name="testLoginSuccess" classname="com.yike.testcases.TestLogin" time="1.31"/>
+  <testcase name="testPhoneWrongFormatAndEmptyPwd" classname="com.yike.testcases.TestLogin" time="0.869">
+    <failure message="expected [请输入手机] but found [请输入手机号]" type="java.lang.AssertionError">java.lang.AssertionError: expected [请输入手机] but found [请输入手机号]
+	at com.yike.testcases.TestLogin.testPhoneWrongFormatAndEmptyPwd(TestLogin.java:48)
+</failure>
+    <system-out><![CDATA[2021-05-26 15:39:58 INFO  BaseTest:96- 关闭浏览器
+2021-05-26 15:39:59 INFO  BaseTest:41- 打开【chrome】浏览器
+2021-05-26 15:40:00 INFO  BaseTest:68- 打开访问地址【http://8.129.91.152:8765//Index/login.html】
+2021-05-26 15:40:00 INFO  BaseTest:77- 设置全局隐式等待时间【5】秒
+2021-05-26 15:40:00 INFO  BasePage:48- 往元素【登录页面_手机号输入框】输入了数据【】
+2021-05-26 15:40:00 INFO  BasePage:48- 往元素【登录页面_密码输入框】输入了数据【smile123fan】
+2021-05-26 15:40:00 INFO  BasePage:35- 点击了元素【登录页面_登录按钮】
+2021-05-26 15:40:00 INFO  BasePage:73- 获取元素【登录页面_获取输入框提示信息】文本信息：【请输入手机号】
+2021-05-26 15:40:00 INFO  Assertion:55- 断言实际值【请输入手机号】与期望值【请输入手机】
+2021-05-26 15:40:00 ERROR Assertion:58- 断言实际值【请输入手机号】与期望值【请输入手机】失败
+2021-05-26 15:40:00 ERROR Assertion:59- java.lang.AssertionError: expected [请输入手机] but found [请输入手机号]
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 3553
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1622014799.408][WARNING]: This version of ChromeDriver has not been tested with Chrome version 90.
+五月 26, 2021 3:39:59 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testPhoneWrongFormatAndEmptyPwd" classname="com.yike.testcases.TestLogin" time="0.312"/>
+  <testcase name="testPhoneWrongFormatAndEmptyPwd" classname="com.yike.testcases.TestLogin" time="0.348"/>
+  <testcase name="testPhoneWrongFormatAndEmptyPwd" classname="com.yike.testcases.TestLogin" time="0.345"/>
+  <testcase name="testPhoneWrongFormatAndEmptyPwd" classname="com.yike.testcases.TestLogin" time="0.331"/>
+  <testcase name="testPhoneWrongFormatAndEmptyPwd" classname="com.yike.testcases.TestLogin" time="0.297"/>
+  <testcase name="testPhoneUnregisterAndWrongPwd" classname="com.yike.testcases.TestLogin" time="0.984"/>
+  <testcase name="testPhoneUnregisterAndWrongPwd" classname="com.yike.testcases.TestLogin" time="0.934"/>
+  <testcase name="testPhoneUnregisterAndWrongPwd" classname="com.yike.testcases.TestLogin" time="0.558"/>
+  <testcase name="testPhoneUnregisterAndWrongPwd" classname="com.yike.testcases.TestLogin" time="0.528"/>
+  <testcase name="testPhoneUnregisterAndWrongPwd" classname="com.yike.testcases.TestLogin" time="1.026"/>
+</testsuite>
