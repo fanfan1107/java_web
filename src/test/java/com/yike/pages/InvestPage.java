@@ -27,6 +27,20 @@ public class InvestPage extends BasePage {
     By activeBy = By.xpath("//div[text()='投标成功！']/following-sibling::div[2]//button");
     //关闭弹窗
     By closePopupBy = By.xpath("//div[@class='layui-layer-content']//img");
+    //投资金额提示非10的整数倍
+    By amountNotTenBy=By.xpath("//button[text()='请输入10的整数倍']");
+    //投资金额100的倍数元素定位
+    By amountWrongBy=By.xpath("//div[@class='text-center']");
+
+
+    /**
+     * 投资页面只输入投资金额，没有点击投标按钮
+     * @param investAmount
+     */
+    public void inputBidAmount(String investAmount){
+        type(investInputBy,"投资页面_投资金额输入框",investAmount);
+    }
+
 
     /**
      * 投标
@@ -84,6 +98,21 @@ public class InvestPage extends BasePage {
      */
     public void closePopup() {
         click(closePopupBy,"投资页面_投资成功弹窗提示");
+    }
+
+    /**
+     * 获取投标按钮上输入非10的整数倍或非数字的提示信息
+     */
+    public String getBidButtonMsg(){
+        return getText(amountNotTenBy,"获取投标按钮上输入非10的整数倍的提示信息");
+    }
+
+    /**
+     * 10的倍数，非100的整数倍
+     * @return
+     */
+    public String getBidButtonCenterMsg(){
+        return getText(amountWrongBy,"非100的整数倍");
     }
 
 }

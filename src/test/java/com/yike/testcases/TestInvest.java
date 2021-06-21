@@ -24,6 +24,7 @@ import java.util.concurrent.TimeUnit;
  **/
 public class TestInvest extends BaseTest {
     String loanTitle;
+
     @BeforeMethod
     public void setup() {
         //投资的前置
@@ -73,9 +74,36 @@ public class TestInvest extends BaseTest {
         Assertion.myAssertEquals(toBeBeforeAmount-toBeAfterAmount,100L);
 //        Assert.assertEquals(userBeforeAmount-userAfterAmount,100.0);
 //        Assert.assertEquals(toBeBeforeAmount-toBeAfterAmount,100L);
+    }
+
+
+    @Test
+    public void testInvestFail01(){
+        //输入非10的整数或者非数字
+        IndexPage indexPage=new IndexPage();
+        indexPage.clickBidButton(loanTitle);
+        //输入投资金额
+        InvestPage investPage=new InvestPage();
+        investPage.inputBidAmount("11");
+        //断言
+        Assertion.myAssertEquals(investPage.getBidButtonMsg(),"请输入10的整数倍");
+    }
+    @Test
+    public void testInvestFail02(){
+        //输入非100的整数倍
+        IndexPage indexPage=new IndexPage();
+        indexPage.clickBidButton(loanTitle);
+
+        InvestPage investPage=new InvestPage();
+        investPage.invest("20");
+
+        //断言
+        Assertion.myAssertEquals(investPage.getBidButtonCenterMsg(),"投标金额必须为100的倍数");
 
 
     }
+
+
 
     @AfterMethod
     public void teardown() {
